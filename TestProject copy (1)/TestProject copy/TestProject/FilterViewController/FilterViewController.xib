@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterViewController" customModule="TestProject" customModuleProvider="target">
+            <connections>
+                <outlet property="countryPickerView" destination="R25-PW-h3e" id="HmX-71-bLD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="R25-PW-h3e">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="788"/>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8y-Jn-Aqy">
+                    <rect key="frame" x="0.0" y="787.66666666666663" width="393" height="34.333333333333371"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="dVx-An-S9s"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="R25-PW-h3e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="A94-hx-Ldg"/>
+                <constraint firstItem="t8y-Jn-Aqy" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="OEI-Ur-Eh9"/>
+                <constraint firstItem="t8y-Jn-Aqy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Qa0-Zb-L9c"/>
+                <constraint firstItem="t8y-Jn-Aqy" firstAttribute="top" secondItem="R25-PW-h3e" secondAttribute="bottom" id="ajp-UU-VNs"/>
+                <constraint firstItem="R25-PW-h3e" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dN1-uj-LdK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="t8y-Jn-Aqy" secondAttribute="bottom" constant="20" id="kJW-Mt-L9X"/>
+                <constraint firstItem="R25-PW-h3e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="uQk-xI-ftc"/>
+            </constraints>
+            <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
